@@ -1,4 +1,5 @@
 
+
 var rod1,rod2,boy,ground,trap,trap2,trap3,inv,inv2,inv3,trapImg,doorImg,houseImg,house,door,boyImg//,leftb,rightb;
 var play = 1;
 var END = 0;
@@ -17,36 +18,36 @@ house = createSprite(width/2,height/2)
 house.addImage(houseImg)
 house.scale = 10
 
-door =createSprite(width/1.1,height/1.2,100,200)
+door =createSprite(width/1.1,height/1.2,width/100,height/200)
 door.addImage(doorImg)
 door.scale = 0.6
 
-rod1 = createSprite(50,height/1.5,width/1.5,20);
-rod2 = createSprite(1500,height/4,width/1.5,20);
+rod1 = createSprite(50,height/1.5,width/1.5,height/20);
+rod2 = createSprite(1500,height/4,width/1.5,height/20);
 
-boy = createSprite(width/1.8,/*100*/200,50,50);
+boy = createSprite(width/1.8,/*100*/200,width/50,height/50);
 boy.addImage(boyImg);
 boy.scale = 0.2
 //boy.debug = true
 
 boy.setCollider("rectangle",-0,10,100,boy.height)
 ground = createSprite(width/2,height/1,width/1,height/20)
-trap = createSprite(width/1.5,height/3.2,100,100);
+trap = createSprite(width/1.5,height/3.2,width/100,height/100);
 trap.addImage(trapImg)
 trap.scale = 0.3
 
-trap2 = createSprite(width/45,height/2,100,100);
+trap2 = createSprite(width/45,height/2,width/100,height/100);
 trap2.addImage(trapImg)
 trap2.scale = 0.2
-trap3 = createSprite(width/45,height/1.1,100,100);
+trap3 = createSprite(width/45,height/1.1,width/100,height/100);
 trap3.addImage(trapImg)
 trap3.scale = 0.3
 
-inv = createSprite(width/1.5,height/1.1,5,1200)
+inv = createSprite(width/1.5,height/1.1,width/5,height/1200)
 inv.visible = false
-inv2 = createSprite(width/2,height/2.2,1900,5)
+inv2 = createSprite(width/2,height/2.2,width/1900,height/5)
 inv2.visible = false
-inv3 = createSprite(width/2,height/1.1,1900,5)
+inv3 = createSprite(width/2,height/1.1,width/1900,height/5)
 inv3.visible = false
 
  //leftb = createSprite(width/2,height/1.1,50,50)
